@@ -1,0 +1,36 @@
+{
+  "name": "核对签名",
+  "guid": "asc.{639E69BC-58DE-4029-9B43-F0420F67E6F1}",
+  "variations": [
+    {
+      "description": "核对签名",
+      "url": "index.html",
+      "icons": ["sign.png", "sign@2x.png"],
+      "isViewer": false,
+      "@isVisual": "是否显示插件自定义界面",
+      "isVisual": false,
+      "@isModal": "是否是模态对话框,与 isInsideMode 互斥",
+      "isModal": false,
+      "@isInsideMode": "插件界面放置在编辑器左侧",
+      "isInsideMode": false,
+      "isSystem": false,
+      "initOnSelectionChanged": true,
+      "hideClose": true,
+      "EditorsSupport": ["word"],
+      "initDataType": "text",
+      "@isDisplayedInViewer": "只读模式下是否显示扩展插件",
+      "isDisplayedInViewer": true,
+      "buttons": [
+        {
+          "text": "OK",
+          "primary": true
+        },
+        {
+          "text": "Cancel",
+          "primary": false
+        }
+      ],
+      "events": ["onClick", "onTargetPositionChanged"]
+    }
+  ]
+}
